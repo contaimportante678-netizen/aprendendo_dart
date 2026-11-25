@@ -1,0 +1,61 @@
+
+
+//falar nome
+
+void main() {
+    String nome = 'gabe';
+    int idade = 25;
+    print('Nome: $nome, Idade: $idade');
+
+}
+
+//variaveis e nulabilidade
+
+void main() {
+    var cidade = "Marechal";//esta como string
+    final double pi = 3.1415;
+    const int maxTentativas = 3;
+    string? apelido;// pode ser null
+    
+    print(apelido ??'sem apelido'); //valor padrao de for null
+
+}
+
+// condicionais e loops
+
+void main () {
+    int nota = 8;
+
+    if (nota >=7) ^{
+        print('aprovado');
+    } else {
+        print('recuperação');
+    }
+
+    for (int i = 1; i <= 3; i++) {
+        print('contagem: $i');
+    }
+}
+
+//listas (list) e mapas (map)
+
+void main() {
+    List<String> frutas = ['maça', 'banana'];
+    frutas.add('uva');
+
+    Map<String, double> precos = {
+        'cafe': 14.50,
+        'pao': 6.00,
+    };
+    
+    print(frutas.first);
+    print(precos['cafe']);
+}
+
+//funcoes e arrow syntax
+
+int somar (int a, int b) => a + b;
+
+void main () {
+    print(somar(4,6));
+}
